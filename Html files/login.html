@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links to other files(css files)-->
+    <link rel="stylesheet" href="../Styles/navigation.css">
+    <link rel="stylesheet" href="../Styles/loginStyle.css">
+    <link rel="stylesheet" href="../styles/footerStyle.css">
+</head>
+
+<body>
+    <!--Navigation bar contnet-->
+    <div class="navbar" id="bar1">
+        <img src="../Images/logo.jpg" alt="logo" id="logo">
+        <ul class="navBar">
+            <li><a href="aboutUs.html"><b>About us</b></a></li>
+            <li><a href="contactUs.html"><b>Contact us</b></a></li>
+            <li><a href="products.html"><b>Products</b></a></li>
+            <li><a href="homePage.html"><b>Home Page</b></a></li>
+        </ul>
+
+    </div>
+    <img src="../Images/logo.jpg" alt="logo" id="loginLogo">
+
+    <!--Login form contents -->
+    <div class="loginDiv">
+        <form action="../PHP files/login.php" method="post" id="loginForm">
+            <h1>Login</h1>
+            <label for="username" class="labels"><b>Username: </b></label>
+            <input type="text" class="inputBox" placeholder="Enter Username" name="username" required>
+            <br><br><br><br>
+
+            <label for="psw" class="labels"><b>Password: </b></label>
+            <input type="password" class="inputBox" placeholder="Enter Password" name="psw" required>
+            <br><br><br>
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="../Html files/register.html" class="hyperlink">Register</a></p>
+
+            <a href="resetPassword.html" class="hyperlink">
+                <p>Forget password?</p>
+            </a>
+            <br><br>
+    </div>
+    </form>
+
+    <!-- The footer of the page -->
+    <div class="pageFootr">
+        <footer>
+            <img src="../Images/logo.jpg" alt="logo" id="footerLogo">
+            <p id="paraFoot">Rozayel is an online flowers and gifting company; we pride ourselves on creating a seamless experience
+                <br>for our customers and making sending flowers and gifts as enjoyable as receiving them.</p>
+
+            <!-- Social media icons (Facebook, Instagram, Twitter, YouTube)-->
+            <a href="https://www.facebook.com/profile.php?id=100080178327369"><img src="../Images/facebookIcon.png" class="cntIcon"></a>
+            <a href="https://www.instagram.com/_rozayel/"><img src="../Images/instagramIcon.png" class="cntIcon"></a>
+            <a href="https://twitter.com/_Rozayel"><img src="../Images/twitterIcon.png" class="cntIcon"></a>
+            <a href="https://www.youtube.com/channel/UCK8RDIYYwza1G-hBVwSDFDQ/featured"><img src="../Images/youtubeIcon.png" class="cntIcon"></a>
+            <p id="copyR">Copyright &copy; 2022 Rozayel Store.
+
+                <!--Footer navigation-->
+                <a class="pageLinks">
+                    <a href="homePage.html">Home page </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="products.html">Products </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contactUs.html">Contact us </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="aboutUs.html">About us</a>
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links to other files(css files, script files)-->
+    <link rel="stylesheet" href="../Styles/navigation.css">
+    <link rel="stylesheet" href="../Styles/registerStyle.css">
+    <link rel="stylesheet" href="../styles/footerStyle.css">
+    <script src="../JS files/RegisterValidation.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar that contains the pages-->
+    <div class="navbar" id="bar1">
+        <img src="../Images/logo.jpg" alt="logo" id="logo">
+        <ul class="navBar">
+            <li><a href="aboutUs.html"><b>About us</b></a></li>
+            <li><a href="contactUs.html"><b>Contact us</b></a></li>
+            <li><a href="products.html"><b>Products</b></a></li>
+            <li><a href="homePage.html"><b>Home Page</b></a></li>
+        </ul>
+    </div>
+
+    <!-- Register form contents-->
+    <img src="../Images/logo.jpg" alt="logo" id="registerLogo">
+    <div class="registerDiv">
+        <form name="regForm" onsubmit="return formValidation()" action="../PHP files/register.php" id="registerForm" method="post">
+            <h1>Register</h1>
+            <!--Labels with input boxes-->
+            <label for="username" class="labels"><b> User name:</b> </label>
+            <br>
+            <input type="text" placeholder="Enter username" name="username" class="inputBox" required>
+            <br><br>
+
+            <label for="phoneNumber" class="labels"><b>Phone number: </b> </label>
+            <br>
+            <input type="tel" placeholder="e.g. 999-999-9999" name="phoneNumber" class="inputBox" required>
+            <br><br>
+
+            <label for="email" class="labels"><b> Email: </b> </label>
+            <br>
+            <input type="email" placeholder="Enter Email" name="email" class="inputBox">
+            <br><br>
+
+            <label for="psw" class="labels"><b>Password:</b> </label>
+            <br>
+            <input type="password" placeholder="Enter password" name="psw" class="inputBox" required>
+            <br><br>
+
+            <label for="confPsw" class="labels"><b>Confirm password:</b> </label>
+            <br>
+            <input type="password" placeholder="confirm password" name="confPsw" class="inputBox" required>
+            <br><br>
+
+            <button type="submit">Register</button>
+            <p>Have an account? <a class="link" href="../Html files/login.html">Log in</a></p>
+            <br><br>
+        </form>
+    </div>
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="pageFootr">
+        <footer>
+            <img src="../Images/logo.jpg" alt="logo" id="footerLogo">
+            <p id="paraFoot">Rozayel is an online flowers and gifting company; we pride ourselves on creating a seamless experience
+                <br>for our customers and making sending flowers and gifts as enjoyable as receiving them.</p>
+            <!-- Social media icons (Facebook, Instagram, Twitter, YouTube)-->
+            <a href="https://www.facebook.com/profile.php?id=100080178327369"><img src="../Images/facebookIcon.png" class="cntIcon"></a>
+            <a href="https://www.instagram.com/_rozayel/"><img src="../Images/instagramIcon.png" class="cntIcon"></a>
+            <a href="https://twitter.com/_Rozayel"><img src="../Images/twitterIcon.png" class="cntIcon"></a>
+            <a href="https://www.youtube.com/channel/UCK8RDIYYwza1G-hBVwSDFDQ/featured"><img src="../Images/youtubeIcon.png" class="cntIcon"></a>
+            <p id="copyR">Copyright &copy; 2022 Rozayel Store.
+                <!--Footer navigation-->
+                <a class="pageLinks">
+                    <a href="homePage.html">Home page </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="products.html">Products </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contactUs.html">Contact us </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="aboutUs.html">About us</a>
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,65 @@
+#loginForm {
+    padding-top: 30%;
+}
+
+button {
+    background-color: #8e4a96;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    align-items: center;
+    font-size: 125%;
+    font-family: 'Times New Roman', Times, serif;
+    ;
+}
+
+.hyperlink:active,
+.hyperlink:link,
+.hyperlink:hover,
+.hyperlink:visited {
+    color: #8e4a96;
+}
+
+.inputBox {
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.labels {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.loginDiv {
+    background-color: white;
+    margin-left: 23%;
+    margin-top: -12%;
+    margin-bottom: 10%;
+    position: static;
+    width: 55%;
+    text-align: center;
+    z-index: 1;
+}
+
+#loginLogo {
+    height: 20%;
+    width: 40%;
+    padding-top: 24%;
+    padding-left: 31%;
+    position: initial;
+    z-index: 2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    color: rgb(85, 22, 71);
+    left: 0%;
+}

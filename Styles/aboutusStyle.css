@@ -1,0 +1,35 @@
+.paraAbout {
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #8e4a96;
+}
+
+.aboutPar {
+    background-color: rgb(240, 214, 233);
+    width: 70%;
+    position: absolute;
+    margin-top: 16%;
+    margin-bottom: 16%;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(226, 66, 191);
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 56%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    color: rgb(85, 22, 71);
+    left: 0%;
+}

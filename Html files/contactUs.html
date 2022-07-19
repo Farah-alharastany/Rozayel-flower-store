@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links to other files(CSS files, script files)-->
+    <link rel="stylesheet" href="../Styles/navigation.css">
+    <link rel="stylesheet" href="../Styles/contactusStyle.css">
+    <link rel="stylesheet" href="../styles/footerStyle.css">
+    <script src="../JS files/feedbackSubmission.js"></script>
+</head>
+
+<body>
+    <!--Login and register logo-->
+    <a href="login.html"><img src="../Images/login.png" id="login"></a>
+    <a href="register.html"><img src="../Images/register.png" id="register"></a>
+
+    <!--Navigation bar that contains the pages-->
+    <div class="navbar" id="bar1">
+        <img src="../Images/logo.jpg" alt="logo" id="logo">
+        <ul class="navBar">
+            <li><a href="aboutUs.html"><b>About us</b></a></li>
+            <li><a href="contactUs.html"><b>Contact us</b></a></li>
+            <li><a href="products.html"><b>Products</b></a></li>
+            <li><a href="homePage.html"><b>Home Page</b></a></li>
+        </ul>
+    </div>
+
+    <!--Contact us contents(Social media accounts) and information about working hours-->
+    <div class="accounts">
+        <h1 id="ContactHeading">Contact Us</h1>
+        <h4>Saudi Arabia, Dammam.</h4>
+        <p class="paraContact">Working Hours: Sunday - Thursday (9 AM - 10 PM) , Friday & Saturday (2 PM - 10 PM)
+        </p>
+        <h3>Feel free to contact us!</h3>
+        <a href="https://www.facebook.com/profile.php?id=100080178327369"><img src="../Images/facebookIcon.png" class="icon"></a>
+        <a href="https://www.instagram.com/_rozayel/"><img src="../Images/instagramIcon.png" class="icon"></a>
+        <a href="https://twitter.com/_Rozayel"><img src="../Images/twitterIcon.png" class="icon"></a>
+        <a href="https://www.youtube.com/channel/UCK8RDIYYwza1G-hBVwSDFDQ/featured"><img src="../Images/youtubeIcon.png" class="icon"></a>
+    </div>
+
+    <!--Feedback form contents-->
+    <div class="feedDiv">
+        <form name="feedForm" onsubmit="return thankMessage()" action="../PHP files/feedback.php" id="feedF" method="post">
+            <h1 id="feedHeading">Feedback &nbsp; <img src="../Images/feedbackImg.png" id="imgFeed">
+            </h1>
+            <!--Labels with input boxes-->
+            <label for="Name" class="labels"><b> Name:</b> </label>
+            <br>
+            <input type="text" placeholder="Enter your name" name="Name" class="inputBox" required>
+            <br><br>
+
+            <label for="email" class="labels"><b> Email: </b> </label>
+            <br>
+            <input type="email" placeholder="Enter Email" name="email" class="inputBox">
+            <br><br>
+
+            <label for="feddbackText" class="labels"><b> Please leave your feedback below: </b> </label>
+            <textarea name="feddbackText" class="inputBox" id="textArea" rows="7" cols=" 40 "></textarea>
+
+            <button type="submit ">Send</button>
+        </form>
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="pageFootr">
+        <footer>
+            <img src="../Images/logo.jpg" alt="logo" id="footerLogo">
+            <p id="paraFoot">Rozayel is an online flowers and gifting company; we pride ourselves on creating a seamless experience
+                <br>for our customers and making sending flowers and gifts as enjoyable as receiving them.</p>
+
+            <!-- Social media icons (Facebook, Instagram, Twitter, YouTube)-->
+            <a href="https://www.facebook.com/profile.php?id=100080178327369"><img src="../Images/facebookIcon.png" class="cntIcon"></a>
+            <a href="https://www.instagram.com/_rozayel/"><img src="../Images/instagramIcon.png" class="cntIcon"></a>
+            <a href="https://twitter.com/_Rozayel"><img src="../Images/twitterIcon.png" class="cntIcon"></a>
+            <a href="https://www.youtube.com/channel/UCK8RDIYYwza1G-hBVwSDFDQ/featured"><img src="../Images/youtubeIcon.png" class="cntIcon"></a>
+            <p id="copyR">Copyright &copy; 2022 Rozayel Store.
+
+                <!--Footer navigation-->
+                <a class="pageLinks">
+                    <a href="homePage.html">Home page </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="products.html">Products </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contactUs.html">Contact us </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="aboutUs.html">About us</a>
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
